@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tyler Dix</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister%7COpen+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+
+      <nav>
+        <div id="navbar">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="landing-text">
+        <h1>Tyler Dix</h1>
+        <h2>Web Designer</h2>
+      </div>
+      <div id="landing-arrow">
+      <a href="#about"><i class="fas fa-angle-down"></i></a>
+      </div>
+    </header>
+
+    <section class="about wrapper">
+      <span id="about">&nbsp;</span>
+      <div class="container about-container">
+        <h1>About</h1>
+        <p class="about-text">I can summarize good design in one word: thoughtful. Most designs today are overly designed, careless, and sloppy. Before I create anything, I carefully think about three things. Audience, purpose, and scope. Every single design decision I make after this must serve these three things. After I determine these objectives, the fun begins! I absolutely love what I do and if I didn’t need to support myself, I’d do it all for free.</p>
+        <div class="flex-item flex-item-about box">
+          <i class="fas fa-graduation-cap"></i>
+          <h2>Educated</h2>
+          <p>I graduated from the Oregon Institute of Technology in 2014 with a BS in IT Business/Systems Analysis. The most important lesson I learned while studying was how to manage my time, and how to stay focused through stressful moments. <a href="assets/TylerDixOfficialTranscripts.pdf">View transcripts</a></p>
+        </div>  
+          <div class="flex-item flex-item-about flex-item-last box">
+          <i class="fab fa-git-square"></i>
+          <h2>Experienced</h2>
+          <p>I’ve created dozens of websites, mostly relegated to simple experiments. With every project I work on, I build up my kit of tools and refine my process. I have a lot to learn, and I’m eager to learn what I don’t already know. <a href="https://teamtreehouse.com/tylerdix">View skills</a></p>
+        </div> 
+      </div> <!-- /container -->
+    </section>
+
+    <section class="projects wrapper">
+      <span id="projects">&nbsp;</span>
+      <h1>Projects</h1>
+      <div class="container">
+        <div class="flex-item flex-item-projects col-3 box"><a href="illumination/index.html">
+          <img src="assets/illumination-big.png" alt="Illumination">
+          <h2>Illumination <i class="fas fa-angle-right"></i></h2>
+          <p>Re-creation from scratch, using really interesting assets.</p>
+          </a>
+        </div>  
+        <div class="flex-item flex-item-projects flex-item-last col-3 box"><a href="orepac/index.html">
+          <img src="assets/orepac-big.png" alt="Illumination">
+          <h2>OrePac <i class="fas fa-angle-right"></i></h2>
+          <p>Long overdue redesign of previous employer's website.</p>
+        </a>
+        </div>  
+        <div class="flex-item flex-item-projects col-3 box"><a href="MadeSimple/index.html">
+          <img src="assets/ms-big.png" alt="Made Simple">
+          <h2>Made Simple <i class="fas fa-angle-right"></i></h2>
+          <p>Supporting website from an iOS App I created for my senior project.</p>
+          </a>
+        </div>
+        <div class="flex-item flex-item-projects flex-item-last col-3 box"><a href="naik/index.html">
+          <img src="assets/naik-big.png" alt="Naik Photography">
+          <h2>Naik Photography <i class="fas fa-angle-right"></i></h2>
+          <p>A site a created for a friend in Portland. A blossoming photographer.</p>
+        </a>
+        </div>  
+        <div class="flex-item flex-item-projects col-3 box"><a href="cantel/index.html">
+          <img src="assets/cantel-big.png" alt="Illumination">
+          <h2>Cantel Sweeping <i class="fas fa-angle-right"></i></h2>
+          <p>A complete redesign for a family friend's parking lot sweeping company.</p>
+        </a>
+        </div>  
+        <div class="flex-item flex-item-projects flex-item-last col-3 box"><a href="handyman/index.html">
+          <img src="assets/handy-big.png" alt="Illumination">
+          <h2>Handyman Ed <i class="fas fa-angle-right"></i></h2>
+          <p>I made this website for my semi-retired Dad to help him make some side-money.</p>
+        </a>
+        </div>  
+      </div> <!-- /container -->
+    </section>
+
+    <section class="contact wrapper">
+      <span id="contact">&nbsp;</span>
+      <h1>Contact</h1>
+        <form action="mail.php" method="POST">
+          <div id="contact-row">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+          </div>
+          <input type="text" name="subject" placeholder="Subject">
+          <textarea name="message" placeholder="Message"></textarea>
+          <input type="submit" value="Send"><input type="reset" value="Clear">
+        </form>
+    </section>
+
+    <footer>
+      <div id="social">
+        <a href="https://teamtreehouse.com/tylerdix"><img src="assets/treehouse-logo.svg" alt="Teamtreehouse"></a>
+        <a href="https://www.linkedin.com/in/tyler-dix-92a55799/"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>&copy; 2019 Tyler Dix. All rights reserved.</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

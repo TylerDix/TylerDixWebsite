@@ -1,0 +1,421 @@
+
+/* Type Scale based on Perfect Fourth
+
+2.369rem
+1.777rem
+1.333rem
+1rem = 16px
+0.75rem
+
+*/
+
+/* Colors 
+
+white: rgb(231, 228, 239);
+blue: rgb(18, 39, 117);
+darker blue: rgb(17, 32, 87);
+darkest blue: rgb(11, 21, 68);
+black: rgb(15, 14, 15);
+green: rgb(109,193, 20);
+
+*/
+
+body {
+  background-color: white;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+
+}
+
+p {margin-bottom: 1.25rem;}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Love Ya Like A Sister', sans-serif;
+  color: rgb(15, 14, 15);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.369rem;
+}
+
+h2 {
+  font-size: 1.777rem;
+  color: rgb(80,80,80);
+}
+
+a {
+  color: rgb(18, 39, 117);
+}
+
+a:hover {
+  color: rgb (109,193, 20);
+  transition: 0.4s;  
+  text-decoration: none;
+}
+
+small, .text_small {font-size: 0.75rem;}
+
+header {
+  display: block;
+  height: 100vh;
+  background-image: url("../assets/paper_fibers.png");
+}
+
+.landing-text {
+    padding: 9rem 0 0 4rem;
+    line-height: .8;
+}
+
+.landing-text h1 {
+  font-size: 2.369rem;
+  margin-bottom: .4rem;
+}
+
+.landing-text h2 {
+  font-size: 1.333rem;
+  margin-top: 0;
+}
+
+.fa-angle-down {
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 50vh;
+}
+
+#landing-arrow a {
+  text-decoration: none;
+  color: rgb(15, 14, 15);
+}
+
+#landing-arrow a:hover {
+  color: rgb(18, 39, 117);
+}
+
+ /***** Global ******/
+ /******************/
+
+.box {
+  box-shadow: 8px 12px 18px 0px rgba(0,0,0,0.1);
+ }
+
+ .wrapper {
+    box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05),
+    inset 0px 2px 3px 0px rgba(0,0,0,0.1);
+ }
+
+  /***** Nav Bar ******/
+ /*********************/
+
+#navbar {
+  background-color: #333; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: -50px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  transition: top 0.5s; /* Transition effect when sliding down (and up) */
+  text-align: center;
+  height: 50px;
+}
+
+/* Style the navbar links */
+#navbar a {
+  display: inline-block;
+  font-family: 'Love Ya Like A Sister', sans-serif;
+  color: rgb(231, 228, 239);
+  text-align: center;
+  padding: 13px 17px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+ /***** About ******/
+ /******************/
+
+.about p {
+  margin-bottom: 50px;
+}
+
+.about h1,
+.projects h1,
+.contact h1 {
+  padding: 2.157rem 0 3.157rem 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+blockquote {
+  margin: 0 auto;
+  max-width: 85%;
+}
+
+cite {
+  margin-left: 1rem;
+}
+
+.about, 
+.projects,
+.contact {
+  background: 
+    linear-gradient(
+      rgb(231, 228, 239, 0.4),
+      rgb(231, 228, 239, 0.4)
+    ),
+    url("../assets/paper_fibers.png");
+  margin: 0 auto;
+  padding-bottom: 3.157rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.flex-item {
+  border: 1px solid #122775;
+  background: white;
+  border-radius: 3px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.fa-graduation-cap,
+.fa-git-square,
+.fa-lightbulb {
+  font-size: 6rem;
+  color: #122775;
+  margin: 30px 0 20px 0;
+}
+
+.flex-item p {
+  max-width: 90%;
+  margin: auto;
+  padding: 1.5rem 0;
+}
+
+.flex-item h2 {
+  margin: 0;
+}
+
+ /***** Projects ******/
+ /******************/
+
+.projects {
+  background-image: url("../assets/paper_fibers.png");
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex-item-projects {
+  margin-bottom: 40px;
+}
+.flex-item-projects h2 {
+  margin-top: 1.5rem;
+}
+
+.flex-item-projects a {
+  display: block;
+  text-decoration: none;
+  color: rgb(15, 14, 15);
+}
+
+.flex-item-projects a:hover {
+  box-shadow: 8px 12px 18px 0px rgb(18, 39, 117, 0.2);
+}
+
+/* CONTACT     */
+/***************************/
+
+.contact
+{
+  margin: 0 auto;
+}
+
+form {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input[type=text], input[type=email], input[type=subject] {
+  font-size: 1rem;
+  padding: 15px 15px 15px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: .8px solid lightgrey;
+  border-radius: 5px;
+}
+
+textarea[name=message] {
+  padding: 15px 15px 15px;
+  height: 200px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: .8px solid lightgrey;
+  border-radius: 5px;
+}
+
+input[type=submit] {
+  padding: 15px 15px 15px;
+  width: 150px;
+  border: .8px solid lightgrey;
+  cursor: pointer;
+  border-radius: 5px;
+  background: rgb(109,193, 20);
+  color: white;
+}
+
+input[type=submit]:hover {
+  background: rgb(18, 39, 117);
+  transition: 0.4s;
+}
+
+input[name=name], input[name=email], input[name=subject], textarea[name=message] {
+  width: 100%;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea[name=message]:focus {
+  outline: 1px solid rgb(109,193, 20);
+}
+
+input[type=submit] {
+  font-family: 'Love Ya Like A Sister', sans-serif;
+  font-size: 1.3rem;
+}
+
+/* FOOTER      */
+/***************************/
+
+#social {
+  display: flex;
+  width: 150px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+#social img {
+  width: 46px;
+}
+
+.fa-linkedin {
+  font-size: 50px;
+}
+
+footer p {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+
+/* MEDIUM BREAKPOINT       */
+/***************************/
+
+@media screen and (min-width: 768px) {
+    
+    .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 90%;
+    }
+
+
+    .flex-item {
+    width: 45%;
+    height: 100%;
+    margin: 0 auto;
+    }
+
+    .about-container h1 {
+      width: 100%;
+    }
+
+    .about-text {
+      width: 73%;
+      margin: 0 auto;
+    }
+
+
+    .flex-item-projects {
+      margin-bottom: 70px;
+    }
+
+    .projects {
+      padding-bottom: 0;
+    }
+
+    form {
+      max-width: 70%;
+    }
+
+    #contact-row {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    #contact-row input {
+      width: 49%;
+      margin-bottom: 20px;
+    }
+
+    input[type=text], input[type=message] {
+      margin-bottom: 20px;
+    }
+
+}  /*END MEDIUM BREAKPOINT*/
+
+/* LARGE BREAKPOINT        */
+/***************************/
+
+@media screen and (min-width: 1224px) {
+
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .about-container {
+    max-width: 70%;
+  }
+
+  .col-3 {
+    width: 30%;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .projects {
+    padding-bottom: 30px;
+  }
+
+  form {
+    max-width: 55%;
+  }
+
+}  /*END LARGE BREAKPOINT*/
+
+
+
+
+
